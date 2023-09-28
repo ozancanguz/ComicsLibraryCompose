@@ -6,6 +6,14 @@ plugins {
     id ("kotlin-parcelize")
 }
 
+
+/*
+val apikeyPropertiesFile = rootProject.file("apikey.properties")
+val apikeyProperties = Properties()
+apikeyProperties.load( FileInputStream(apikeyPropertiesFile))
+
+*/
+
 android {
     namespace = "com.example.comicslbrarycompose"
     compileSdk = 34
@@ -21,6 +29,11 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
+
+       // buildConfigField("String","MARVEL_KEY",apikeyProperties())
+        // buildConfigField("String","MARVEL_SECRET",apikey.properties["MARVEL_SECRET"])
+
     }
 
     buildTypes {
