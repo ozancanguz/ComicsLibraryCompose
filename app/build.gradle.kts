@@ -150,7 +150,8 @@ dependencies {
 
 
 
-
+    implementation("androidx.compose.ui:ui:1.0.0")
+    implementation("androidx.compose.material:material:1.0.0")
 
 
 
