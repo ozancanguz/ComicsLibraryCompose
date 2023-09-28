@@ -1,5 +1,6 @@
 package com.example.comicslbrarycompose.di
 
+import com.example.comicslbrarycompose.repository.MarvelRepo
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -11,6 +12,8 @@ class HiltModule{
 
     // will change here later
     @Provides
-    fun provideApiRepo()=MarvelApiRepo(apiService.api)
+    fun provideApiRepo()=MarvelRepo(NetworkModule.api)
+
+
 
 }
