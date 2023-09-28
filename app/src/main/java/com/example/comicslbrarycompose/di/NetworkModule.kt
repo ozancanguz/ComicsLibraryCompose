@@ -19,8 +19,7 @@ import retrofit2.create
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
-@Module
-@InstallIn(SingletonComponent::class)
+
 object NetworkModule {
 
     private val BASE_URL="http://gateway.marvel.com/v1/public/"
