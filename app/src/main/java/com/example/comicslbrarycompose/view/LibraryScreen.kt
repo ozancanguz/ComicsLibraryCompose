@@ -10,14 +10,6 @@ fun LibraryScreen(navController: NavController) {
 
     Text(text = "LİBRARY SCREEN")
 
-    Button(onClick = {
-        navController.navigate(Destination.CollectionScreen.route)
 
-
-    }) {
-
-
-
-    }
 
 }
